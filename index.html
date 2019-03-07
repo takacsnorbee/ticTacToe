@@ -1,0 +1,49 @@
+<!DOCUMENT html>
+<html>
+	<head>
+		<title>ticTacToe</title>
+		<meta lang="en">
+		<meta name="viweport" content="width=device-width, initial-scale = 1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>TIC TAC TOE</h1>
+		</header>
+		<main>
+			<article>
+				<div id="table">
+					<div id="field1" class="field"> </div>
+					<div id="field2" class="field"> </div>
+					<div id="field3" class="field"> </div>
+					<div id="field4" class="field"> </div>
+					<div id="field5" class="field"> </div>
+					<div id="field6" class="field"> </div>
+					<div id="field7" class="field"> </div>
+					<div id="field8" class="field"> </div>
+					<div id="field9" class="field"> </div>
+				</div>
+				<button onclick="resetGame()">Start Game</button>
+				<div id="result"></div>
+			</article>
+			<aside>
+				<h3>Tic Tac Toe rules:</h3>
+				<p>Tic Tac Toe is a really simple game. You have to figure out what your opponent plays againts you.</p>
+				<ul>
+					<li>The game is played on a 3 squares by 3 squares grid.</li>
+					<li>One player marks X, the another one marks O. Players must put their marks into an empty squares.</li>
+					<li>The goal is to make 3 marks of yours in a row (horizontal, vertical or across). Who take it first, win the game!</li>
+					<li>When all squares is marked, and no 3 marks in a row, the game ends with tie.</li>
+				</ul>
+			</aside>
+		</main>
+		<footer>
+			<p><small>Tic Tac Toe project &copy; <small id="copyrightYear"></small></small></p>
+			<p><small>Made by Norbert Takács</small></p>
+		</footer>
+	</body>
+	<script src="code.js" type="text/javascript"></script>
+</html>

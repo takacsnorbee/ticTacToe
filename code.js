@@ -1,21 +1,21 @@
 //DATE
-document.getElementById('copyrightYear').innerHTML = new Date().getFullYear()
+document.getElementById('copyrightYear').innerHTML = new Date().getFullYear();
 
 //GAME---------------------------------------------------------------------
 
 //FIELDS
 
-let field1 = document.getElementById('field1'),
-		field2 = document.getElementById('field2'),
-		field3 = document.getElementById('field3'),
-		field4 = document.getElementById('field4'),
-		field5 = document.getElementById('field5'),
-		field6 = document.getElementById('field6'),
-		field7 = document.getElementById('field7'),
-		field8 = document.getElementById('field8'),
-		field9 = document.getElementById('field9')
+let fieldArray = [];
 
-let fieldArray = [field1, field2, field3, field4, field5, field6, field7, field8, field9]
+for (let i = 1; i <= 9; i++) {
+	const table = document.getElementById('table');
+	const newField = document.createElement('div');
+
+	newField.setAttribute('id', 'field' + i);
+	newField.setAttribute('class', 'field');
+	table.appendChild(newField);
+	fieldArray.push(newField);
+}
 
 //START GAME
 

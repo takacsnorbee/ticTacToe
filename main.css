@@ -9,7 +9,6 @@
 body {
 	height: 100vh;
 	width: 100vw;
-	
 }
 
 header, footer{
@@ -109,26 +108,4 @@ footer {
 button {
 	font-family: var(--fontH);
 	font-size: 1.2rem;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
